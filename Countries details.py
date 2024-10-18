@@ -10,12 +10,12 @@ population= soup.findAll("span", attrs={"class":"country-population"})
 area= soup.findAll("span", attrs={"class":"country-area"})
 
 print("Enter name of Country or (all) to for all countries" )
-name= input("Country: ").strip()
+name= input("Country: ").strip().lower()
 #Flag to check if any country was found
 country_found = False
 
 for country,capital,people,size in zip(countries, capitals, population, area):
-    country_name=country.text.strip()
+    country_name=country.text.strip().lower()
     if country_name == name.strip():
         print(f"Country: {country_name} \nCapital: {capital.text}\nPopulation: {people.text}\nArea (km^2): {size.text}\n")
         country_found= True #mark as done

@@ -19,8 +19,8 @@ countries= soup.findAll("h3", attrs={"class":"country-name"})
 capital= soup.findAll("span", attrs={"class":"country-capital"})
 
 for country,city in zip(countries, capital):
-    name="Rwanda"
-    country_name=country.text.strip()
+    name="Rwanda".lower()
+    country_name=country.text.strip().lower()
     #country_name= len(country.text.strip()) # removes extra white space/ this will display character length of country
     if country_name == str(name):
         print(f"Country name: {country.text.strip()} \nCapital city: {city.text}\n ")
