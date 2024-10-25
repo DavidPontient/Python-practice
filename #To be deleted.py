@@ -1,12 +1,17 @@
-limit=3
-gcount=0
-guess=3
-while gcount < limit:
-    num=int(input("Guess number range 1-4: "))
-    if num != guess:
-        print("try again ")
-        gcount+=1
+l = [5, 1, 1, 1, 5]
+for i in l:
+    if i == 5:
+        print(i * "*")  # Prints 5 asterisks
     else:
-        print("correct")
-        break
-else:print("youve reached guess limit")    
+        print("*   *")  # Prints asterisks with 3 spaces in between
+
+# # Size of the heart
+# for row in range(6):
+#     for col in range(7):
+#         if (row == 0 and col % 3 != 0) or (row == 1 and col % 3 == 0) or (row - col == 2) or (row + col == 8):
+#             print("*", end="")
+#         else:
+#             print(" ", end="")
+#     print()  # Newline after each row
+
+

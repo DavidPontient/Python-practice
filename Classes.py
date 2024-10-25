@@ -9,14 +9,18 @@ class Dog:
     def get_human_years(self):
         # Convert dog's age to human years (1 dog year = 7 human years)
         return self.age * 7
+    
+   
+        
+        
 
 # Creating an instance (object) of the Dog class
-my_dog = Dog("Buddy", 3)
+first_dog = Dog("Buddy", 3)
+second_dog= Dog("mika", 4)
 
 # Accessing attributes
-print(my_dog.name)  # Output: Buddy
-print(my_dog.age)   # Output: 3
+print(f"My dogs name is {second_dog.name}")  # Output: Buddy   
 
 # Calling methods
-my_dog.bark()  # Output: Buddy says woof!
-print(my_dog.get_human_years())  # Output: 21
+second_dog.bark()  # Output: Buddy says woof!
+print(f"{second_dog.name}'s age is {second_dog.age}, in Human years its {second_dog.get_human_years()}")  # Output: 21
