@@ -7,6 +7,7 @@ class employees:
         return self.Fname +" "+ self.Lname
     def salary(self):
         return self.years*100
+    
 fname=str(input("First name: "))
 lname=str(input("last name: "))
 year=int(input("years worked: "))

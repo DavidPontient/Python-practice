@@ -21,7 +21,9 @@ count = 0
 while count<= 5:
      print("count: " + str (count)) #as long as count is less than or equals to five loop will keep on printing"
      count +=1 # incriment to avoit loop 
-
+def add(a, b):
+    return a + b if a > b else "a is small"
+print(add(10, 4))
 
 
 

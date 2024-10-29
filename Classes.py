@@ -12,8 +12,6 @@ class Dog:
     
    
         
-        
-
 # Creating an instance (object) of the Dog class
 first_dog = Dog("Buddy", 3)
 second_dog= Dog("mika", 4)

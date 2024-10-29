@@ -14,9 +14,7 @@
 # result= addition(int(num1), int(num2))
 # print(result)
 
-num=input("Number to be squared: ")
 def squared(num):
    return num*num
-result=squared(int(num))
-print(result)
+print(squared(3))
 
