@@ -1,0 +1,8 @@
+l=[1,2,3,4]
+x=3
+count_n0_of_character=0
+for i in range(x):
+    print(l[i],end="")
+    count_n0_of_character+=1
+print(count_n0_of_character)
+#script displays the number of x characters in the list and prints the lenth of the characters without using len

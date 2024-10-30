@@ -10,7 +10,6 @@ class employees:
     
 fname=str(input("First name: "))
 lname=str(input("last name: "))
-year=int(input("years worked: "))
-First_employee= employees(fname, lname, year)
-print(f"Mister{First_employee.fullname()} worked {year}, his current salary is {First_employee.salary()}")
+First_employee= employees(fname, lname, 12)
+print(f"Mister{First_employee.fullname()} worked {First_employee.years}, his current salary is {First_employee.salary()}")
 

@@ -24,4 +24,4 @@ def lettertoint(s: str) -> int:
     
     return output 
 
-print(lettertoint("VX"))
+print(lettertoint("IM"))
